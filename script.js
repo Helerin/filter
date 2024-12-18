@@ -64,4 +64,5 @@ console.log(contatosSuporte);
 
 
 const contatosSugestao = filtrarPorAssunto(contatos, "Sugestão")
+console.log(contatosSugestao);
 
