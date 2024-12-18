@@ -66,3 +66,19 @@ console.log(contatosSuporte);
 const contatosSugestao = filtrarPorAssunto(contatos, "Sugestão")
 console.log(contatosSugestao);
 
+//adicionar uma contagem dos filtros
+
+const contarContatos = (contatos, filtro) => {
+    let count = 0;
+    for (let i = 0; i < contatos.length; i++) {
+        if (contatos[i].assunto === filtro) {
+            count++;
+        }
+    }
+    console.log(`Total de contatos com assunto "${filtro}": ${count}`);
+};
+
+contarContatos(contatos, "Dúvida");
+contarContatos(contatos, "Suporte Técnico");
+contarContatos(contatos, "Sugestão");
+
